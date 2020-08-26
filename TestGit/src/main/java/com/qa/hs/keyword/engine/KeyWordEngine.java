@@ -12,6 +12,8 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.qa.hs.keyword.base.Base;
 
@@ -98,7 +100,10 @@ public class KeyWordEngine
 			
 			switch (locatorName) {
 			case "id":
-				element =   driver.findElement(By.id(locatorValue));
+				WebDriverWait wait1 = new WebDriverWait(driver, 10);
+				element = wait1.until(ExpectedConditions.elementToBeClickable(By.id(locatorValue)));
+				
+				//element =   driver.findElement(By.id(locatorValue));
 				if(action.equalsIgnoreCase("sendkeys")	)
 				{ 
 					element.clear();
