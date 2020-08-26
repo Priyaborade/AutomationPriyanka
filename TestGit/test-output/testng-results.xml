@@ -2,17 +2,24 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3420" started-at="2020-08-26T05:44:11Z" finished-at="2020-08-26T05:44:14Z">
+  <suite name="Default suite" duration-ms="66" started-at="2020-08-26T06:26:22Z" finished-at="2020-08-26T06:26:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3420" started-at="2020-08-26T05:44:11Z" finished-at="2020-08-26T05:44:14Z">
+    <test name="Default test" duration-ms="66" started-at="2020-08-26T06:26:22Z" finished-at="2020-08-26T06:26:22Z">
       <class name="com.qa.hs.tests.LoginTest">
-        <test-method status="FAIL" signature="loginTest()[pri:0, instance:com.qa.hs.tests.LoginTest@be83e4]" name="loginTest" duration-ms="3200" started-at="2020-08-26T11:14:11Z" finished-at="2020-08-26T11:14:14Z">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="FAIL" signature="loginTest()[pri:0, instance:com.qa.hs.tests.LoginTest@be83e4]" name="loginTest" duration-ms="23" started-at="2020-08-26T11:56:22Z" finished-at="2020-08-26T11:56:22Z">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+	Syntax error, insert "}" to complete ClassBody
+]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.qa.hs.keyword.engine.KeyWordEngine.startExecution(KeyWordEngine.java:56)
-	at com.qa.hs.tests.LoginTest.loginTest(LoginTest.java:15)
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert "}" to complete ClassBody
+
+	at com.qa.hs.keyword.engine.KeyWordEngine.<init>(KeyWordEngine.java:124)
+	at com.qa.hs.tests.LoginTest.loginTest(LoginTest.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -40,7 +47,7 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
