@@ -40,7 +40,7 @@ public class Base {
 		prop = new Properties();
 		try 
 		{
-			FileInputStream ip = new FileInputStream("C:\\User\\Priya Borade\\git\\AutomationPriyanka\\TestGit\\src\\main\\java\\com\\qa\\hs\\keyword\\config\\config.properties");
+			FileInputStream ip = new FileInputStream("C:\\Users\\Priya Borade\\git\\AutomationPriyanka\\TestGit\\src\\main\\java\\com\\qa\\hs\\keyword\\config\\config.properties");
 		prop.load(ip);
 		} catch (FileNotFoundException e) 
 		{
