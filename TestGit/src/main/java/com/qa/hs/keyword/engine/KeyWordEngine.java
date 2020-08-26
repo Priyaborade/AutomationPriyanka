@@ -53,8 +53,11 @@ public class KeyWordEngine
 		}
 		sh = wb.getSheet(sheetName);
 		int k=0;
+		
+		
 		for(int i=0;		i< sh.getLastRowNum();	 i++)
 		{
+			try{
 			String locatorColValue=  sh.getRow(i+1).getCell(k+1).toString().trim(); //id=username
 			if(!locatorColValue.equalsIgnoreCase("NA"))
 			{
@@ -111,7 +114,12 @@ public class KeyWordEngine
 				break;
 			}
 			
-		}
+		} 
+			catch(Exception e){
+			e.printStackTrace();
+			}
+		
+		
 	}
 	
 }
