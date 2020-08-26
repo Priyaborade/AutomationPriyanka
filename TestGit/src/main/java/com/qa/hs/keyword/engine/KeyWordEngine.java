@@ -26,8 +26,7 @@ public class KeyWordEngine
 	public static Workbook wb;
 	public static Sheet sh;
 	
-	public final String SCENARIO_SHEET_PATH = "C:/Users/Priya Borade/git/AutomationPriyanka/"
-			+ "TestGit/src/main/java/com/qa/hs/keyword/scenarios/hubspot_Scenarios.xlsx" ;
+	public final String SCENARIO_SHEET_PATH = "C:\\Users\\Priya Borade\\git\\AutomationPriyanka\\TestGit\\src\\main\\java\\com\\qa\\hs\\keyword\\scenarios\\hubspot_Scenarios.xlsx" ;
 
 	public void startExecution(String sheetName)
 	{

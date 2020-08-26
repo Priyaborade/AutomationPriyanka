@@ -20,7 +20,7 @@ public class Base {
 		
 		if(browserName.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "D:/selenium/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Priya Boradegit\\AutomationPriyanka\\TestGit\\src\\main\\resources\\chromedriver.exe");
 			
 			if(prop.getProperty("headless").equals("yes"))
 			{
@@ -40,7 +40,7 @@ public class Base {
 		prop = new Properties();
 		try 
 		{
-			FileInputStream ip = new FileInputStream("C:/User/Priya Borade/git/AutomationPriyanka/TestGi/src/main/java/com/qa/hs/keyword/config/config.properties");
+			FileInputStream ip = new FileInputStream("C:\\User\\Priya Borade\\git\\AutomationPriyanka\\TestGit\\src\\main\\java\\com\\qa\\hs\\keyword\\config\\config.properties");
 		prop.load(ip);
 		} catch (FileNotFoundException e) 
 		{
