@@ -20,7 +20,7 @@ public class Base {
 		
 		if(browserName.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Priya Boradegit\\AutomationPriyanka\\TestGit\\src\\main\\resources\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Priya Borade\\git\\AutomationPriyanka\\TestGit\\src\\main\\resources\\chromedriver.exe");
 			
 			if(prop.getProperty("headless").equals("yes"))
 			{
